@@ -31,9 +31,11 @@ _Avoid_: Client, buyer, account
 
 ## Single vs multi-context repos
 
-**Single context (most repos):** One `CONTEXT.md` at the repo root.
+These live under whatever root `/setup-skills` configured (`docs/agents/` by default) — check the `## Agent skills` block in `CLAUDE.md`/`AGENTS.md` for the **Artifacts root** line, then `domain.md` there for the detail.
 
-**Multiple contexts:** A `CONTEXT-MAP.md` at the repo root lists the contexts, where they live, and how they relate to each other:
+**Single context (most repos):** One `CONTEXT.md` at the root.
+
+**Multiple contexts:** A `CONTEXT-MAP.md` at the root lists the contexts, where they live, and how they relate to each other:
 
 ```md
 # Context Map

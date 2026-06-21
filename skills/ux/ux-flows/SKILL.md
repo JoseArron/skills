@@ -23,6 +23,8 @@ Before building, answer for each state of the flow:
 
 If a component's purpose is an action, the CTA must be unmissable. If its purpose is information, remove every label the content already implies (no "Truck" eyebrow above a plate number).
 
+Questions 1–3 close the **Gulf of Execution** ("how do I do this?"); question 4 closes the **Gulf of Evaluation** ("what just happened?"). Mirror the user's mental model from `USER-BRIEF.md` (`/understand-the-user`) — the flow should match how they think the task works, not your schema. To make any single screen read clearly at a glance, run `/make-it-obvious`.
+
 ## Feedback at its locality
 
 The user's context stays in one place; the consequence of an action shows up right there.
@@ -39,6 +41,7 @@ Match friction to consequence:
 - **Harmless / expected action** → fires directly, button shows its own spinner.
 - **Irreversible or bulk action** → one confirm sheet stating the consequence in plain words ("This can't be undone") with an easy way out ("Not Yet").
 - **Legal / responsibility moment** → deliberate two-step: explicit checkbox statement gates the CTA.
+- **Catastrophic / irreversible at scale** → a **forcing function**: type-to-confirm, or an interlock that makes the dangerous path harder than the safe one. Never let a single fat-fingered tap trigger it.
 
 Never stack two celebrations or two confirms in a row.
 
@@ -47,6 +50,7 @@ Never stack two celebrations or two confirms in a row.
 - Map error codes to human views in a domain component (title + what happened + what to do), never raw messages.
 - The primary CTA is the most likely recovery (Refresh when state is stale, Try Again for network). Dismiss is always available for recoverable errors.
 - Errors appear at the same locality as the action that caused them (sheet over the same screen).
+- Separate **slips** (right intent, wrong tap → prevent with constraints and undo) from **mistakes** (wrong intent → prevent with clearer feedback and a model that matches the user's). A slip needs a guardrail; a mistake needs better understanding.
 
 ## Empty & loading states
 
@@ -70,3 +74,5 @@ Organize by domain, not by widget type. One common layout (adapt to your framewo
 - [ ] Friction matches consequence (direct / confirm / checkbox).
 - [ ] Errors are human, local, and lead to recovery.
 - [ ] End-of-journey state celebrates, then offers a clean reset.
+
+Once the screens exist, audit them against the heuristics with `/ux-review`.
