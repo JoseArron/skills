@@ -14,6 +14,6 @@ to pull the latest.
 
 Skills live at `skills/<category>/<name>/SKILL.md`. The categories:
 `requirements-and-planning`, `build-and-debug`, `review-and-refactor`,
-`ux`, `working-with-skills`, `agent-workflow`, `productivity`, `git-workflow`, and
-`project-setup` are for organization only. They flatten to one directory per skill
-name on install.
+`security`, `ux`, `working-with-skills`, `agent-workflow`, `productivity`,
+`git-workflow`, and `project-setup` are for organization only. They flatten to one
+directory per skill name on install.
