@@ -1,5 +1,5 @@
 ---
-name: no-ai-slop
+name: deslop-written
 description: "Rules and worked examples for writing prose that does not read like AI-generated slop. Consult before writing or editing any prose."
 ---
 
