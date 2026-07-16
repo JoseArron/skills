@@ -63,7 +63,7 @@ prisma.order.findMany({
 });
 ```
 
-The ORM query is type-checked end-to-end, the relation appears in the schema, and the SQL is the same shape as the view. If a real perf problem shows up under `EXPLAIN`, escalate to `improve-codebase-architecture` and consider a `MATERIALIZED VIEW` with an explicit refresh trigger — and record the decision as an ADR in `docs/adr/`.
+The ORM query is type-checked end-to-end, the relation appears in the schema, and the SQL is the same shape as the view. If a real perf problem shows up under `EXPLAIN`, escalate to `improve-codebase-architecture` and consider a `MATERIALIZED VIEW` with an explicit refresh trigger — and record the decision as an ADR in `{agentRoot}/docs/adr/`.
 
 ### Materialized view without refresh
 

@@ -4,7 +4,7 @@ description: >
   Build and maintain a grounded picture of the project's users before designing
   solutions — personas, jobs-to-be-done, as-is/to-be workflows, and the
   assumptions under them, each tagged evidence or assumption. Use when kicking
-  off a project or feature, before a PRD or user stories, when the team is
+  off a project or feature, before a spec or user stories, when the team is
   guessing what users "want," or when another skill needs the user's goals or
   mental model.
 ---
@@ -29,7 +29,7 @@ With real input already in hand — research notes, transcripts, analytics, a cl
 
 Twice over a project's life, both writing the same brief:
 
-- **Once at kickoff** — seed the brief before the first PRD writes user stories on guesses.
+- **Once at kickoff** — seed the brief before the first spec writes user stories on guesses.
 - **Per feature, as needed** — when a feature raises a user question `/grilling` can't reach. Grilling stress-tests the *plan*; this stress-tests *what you believe about the user*. Read the standing brief, refine it, fold back what you learn.
 
 If you already hold a grounded picture, skip to `/to-spec`.

@@ -78,7 +78,7 @@ After each cluster:
 
 ### 5. Record the decision
 
-If a fix changed an architectural call (replaced a denylist with an allowlist contract, moved a secret server-side, changed a token model), record it as an ADR in `docs/adr/` (see `domain-modeling`'s `ADR-FORMAT.md`). Skip ADRs for local, obvious fixes — only record what a future reviewer would otherwise re-litigate.
+If a fix changed an architectural call (replaced a denylist with an allowlist contract, moved a secret server-side, changed a token model), record it as an ADR in `{agentRoot}/docs/adr/` (see `domain-modeling`'s `ADR-FORMAT.md`). Skip ADRs for local, obvious fixes — only record what a future reviewer would otherwise re-litigate.
 
 ## Stop conditions
 

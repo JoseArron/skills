@@ -67,7 +67,7 @@ After each cluster:
 
 ### 4. Record the architectural calls
 
-If a finding required a real architectural decision (replacing a DB view with a query, changing a contract input, dropping a pattern across an app), record it as an ADR in `docs/adr/` (see `domain-modeling`'s `ADR-FORMAT.md`). Skip ADR entries for ephemeral, obvious, or purely local fixes — only record decisions a future reviewer would otherwise re-litigate.
+If a finding required a real architectural decision (replacing a DB view with a query, changing a contract input, dropping a pattern across an app), record it as an ADR in `{agentRoot}/docs/adr/` (see `domain-modeling`'s `ADR-FORMAT.md`). Skip ADR entries for ephemeral, obvious, or purely local fixes — only record decisions a future reviewer would otherwise re-litigate.
 
 ## Stop conditions
 

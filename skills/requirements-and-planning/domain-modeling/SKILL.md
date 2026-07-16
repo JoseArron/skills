@@ -9,35 +9,35 @@ Actively build and sharpen the project's domain model as you design. This is the
 
 ## File structure
 
+Read the `## Agent skills` block in `AGENTS.md`/`CLAUDE.md` first. It names the configured agent root. Create and update domain files under that agent root unless `/setup-skills` configured the repo root itself as the agent root.
+
 Most repos have a single context:
 
 ```
-/
+{agentRoot}/
 ├── CONTEXT.md
 ├── docs/
 │   └── adr/
 │       ├── 0001-event-sourced-orders.md
 │       └── 0002-postgres-for-write-model.md
-└── src/
 ```
 
-If a `CONTEXT-MAP.md` exists at the root, the repo has multiple contexts. The map points to where each one lives:
+If a `CONTEXT-MAP.md` exists at the agent root, the repo has multiple contexts. The map points to where each one lives:
 
 ```
-/
+{agentRoot}/
 ├── CONTEXT-MAP.md
 ├── docs/
 │   └── adr/                          ← system-wide decisions
-├── src/
-│   ├── ordering/
-│   │   ├── CONTEXT.md
-│   │   └── docs/adr/                 ← context-specific decisions
-│   └── billing/
-│       ├── CONTEXT.md
-│       └── docs/adr/
+├── ordering/
+│   ├── CONTEXT.md
+│   └── docs/adr/                     ← context-specific decisions
+└── billing/
+    ├── CONTEXT.md
+    └── docs/adr/
 ```
 
-Create files lazily — only when you have something to write. If no `CONTEXT.md` exists, create one when the first term is resolved. If no `docs/adr/` exists, create it when the first ADR is needed.
+Create files lazily — only when you have something to write. If no `{agentRoot}/CONTEXT.md` exists, create one when the first term is resolved. If no `{agentRoot}/docs/adr/` exists, create it when the first ADR is needed.
 
 ## During the session
 
@@ -59,7 +59,7 @@ When the user states how something works, check whether the code agrees. If you 
 
 ### Update CONTEXT.md inline
 
-When a term is resolved, update `CONTEXT.md` right there. Don't batch these up — capture them as they happen. Use the format in [CONTEXT-FORMAT.md](./CONTEXT-FORMAT.md).
+When a term is resolved, update `{agentRoot}/CONTEXT.md` right there. Don't batch these up — capture them as they happen. Use the format in [CONTEXT-FORMAT.md](./CONTEXT-FORMAT.md).
 
 `CONTEXT.md` should be totally devoid of implementation details. Do not treat `CONTEXT.md` as a spec, a scratch pad, or a repository for implementation decisions. It is a glossary and nothing else.
 

@@ -23,7 +23,7 @@ Before building, answer for each state of the flow:
 
 If a component's purpose is an action, the CTA must be unmissable. If its purpose is information, remove every label the content already implies (no "Truck" eyebrow above a plate number).
 
-Questions 1–3 close the **Gulf of Execution** ("how do I do this?"); question 4 closes the **Gulf of Evaluation** ("what just happened?"). Mirror the user's mental model from `USER-BRIEF.md` (`/understand-the-user`) — the flow should match how they think the task works, not your schema. To make any single screen read clearly at a glance, run `/make-it-obvious`.
+Questions 1–3 close the **Gulf of Execution** ("how do I do this?"); question 4 closes the **Gulf of Evaluation** ("what just happened?"). Mirror the user's mental model from `{agentRoot}/USER-BRIEF.md` (`/understand-the-user`) — the flow should match how they think the task works, not your schema. To make any single screen read clearly at a glance, run `/make-it-obvious`.
 
 ## Feedback at its locality
 

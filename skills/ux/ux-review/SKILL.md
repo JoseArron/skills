@@ -13,7 +13,7 @@ Walk a built UI against known heuristics and report the violations — ranked, l
 
 ## Set up the evaluation
 
-1. **Know who you're evaluating for.** Pull the persona and mental model from `USER-BRIEF.md` (`/understand-the-user`) if it exists; otherwise state the assumed user in one line. A heuristic violation only matters relative to a user trying to do something.
+1. **Know who you're evaluating for.** Pull the persona and mental model from `{agentRoot}/USER-BRIEF.md` (`/understand-the-user`) if it exists; otherwise state the assumed user in one line. A heuristic violation only matters relative to a user trying to do something.
 2. **Walk the real thing.** Run the UI if you can and go through the flow state by state — empty, loading, success, error, edge. If you can't run it, review the markup and components. Never review from memory of how it "should" look.
 
 ## The heuristics
