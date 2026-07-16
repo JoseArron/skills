@@ -1,6 +1,6 @@
 # ADR Format
 
-ADRs live in `docs/adr/` under whatever root `/setup-skills` configured (`docs/agents/` by default) — check the `## Agent skills` block in `CLAUDE.md`/`AGENTS.md` for the **Artifacts root** line, then `domain.md` there for the detail. Sequential numbering: `0001-slug.md`, `0002-slug.md`, etc.
+ADRs live in `docs/adr/` and use sequential numbering: `0001-slug.md`, `0002-slug.md`, etc.
 
 Create the `docs/adr/` directory lazily — only when the first ADR is needed.
 

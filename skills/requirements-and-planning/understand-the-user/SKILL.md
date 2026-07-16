@@ -21,7 +21,7 @@ Every claim about the user is an **assumption** until grounded. Invented persona
 
 ## Run it as an interview
 
-An **interview, not a one-shot generator** — closer to `/grilling` than to `/to-prd`. Don't ask it to "write personas"; that invents fiction. Invoke it with bare context — *who and what you're building* — and answer **one question at a time** as it builds the brief: who's the primary user, what are they getting done, walk me through how they do it today, *how do you know that — did you see it or assume it?* Same relentless one-at-a-time style as a grill, aimed at the **user** instead of the **plan**.
+An **interview, not a one-shot generator** — closer to `/grilling` than to `/to-spec`. Don't ask it to "write personas"; that invents fiction. Invoke it with bare context — *who and what you're building* — and answer **one question at a time** as it builds the brief: who's the primary user, what are they getting done, walk me through how they do it today, *how do you know that — did you see it or assume it?* Same relentless one-at-a-time style as a grill, aimed at the **user** instead of the **plan**.
 
 With real input already in hand — research notes, transcripts, analytics, a client's requirements — paste it in; it synthesizes from that and interviews you only to fill gaps and challenge the shaky parts.
 
@@ -32,7 +32,7 @@ Twice over a project's life, both writing the same brief:
 - **Once at kickoff** — seed the brief before the first PRD writes user stories on guesses.
 - **Per feature, as needed** — when a feature raises a user question `/grilling` can't reach. Grilling stress-tests the *plan*; this stress-tests *what you believe about the user*. Read the standing brief, refine it, fold back what you learn.
 
-If you already hold a grounded picture, skip to `/to-prd`.
+If you already hold a grounded picture, skip to `/to-spec`.
 
 ## The moves
 
@@ -66,9 +66,9 @@ _Done when:_ no high-impact, low-confidence assumption is left without either a 
 
 ## Output: the user brief
 
-The **standing spine** — personas, jobs, mental model, and durable user-level assumptions — lives in a project-wide **`USER-BRIEF.md`**, under whatever root `/setup-skills` configured (`docs/agents/` by default — check the `## Agent skills` block in `CLAUDE.md`/`AGENTS.md` for the **Artifacts root** line, then `domain.md` there for the detail). Created **lazily** — only the moves you actually ran — and **maintained inline** as you learn. Use the template in [BRIEF-FORMAT.md](./BRIEF-FORMAT.md).
+The **standing spine** — personas, jobs, mental model, and durable user-level assumptions — lives in a project-wide **`USER-BRIEF.md`**, under the agent root `/setup-skills` configured (`docs/agents/` by default — check the `## Agent skills` block in `CLAUDE.md`/`AGENTS.md` for the **Agent root** line, then `domain.md` there for the detail). Created **lazily** — only the moves you actually ran — and **maintained inline** as you learn. Use the template in [BRIEF-FORMAT.md](./BRIEF-FORMAT.md).
 
-The **per-feature parts** — this feature's as-is→to-be journey and its feature-scoped assumptions — belong with that feature's planning, where `/to-prd` folds them into the PRD (journey → problem/solution, assumption ledger → risks). Promote `[A]`→`[E]` in the standing brief whenever `/grilling` or `/prototype` resolves one.
+The **per-feature parts** — this feature's as-is→to-be journey and its feature-scoped assumptions — belong with that feature's planning, where `/to-spec` folds them into the spec (journey → problem/solution, assumption ledger → risks). Promote `[A]`→`[E]` in the standing brief whenever `/grilling` or `/prototype` resolves one.
 
 On a cold start with no user knowledge yet, you may have nothing to write first — then `/grilling` comes first and the brief is its *precipitate*, not its input.
 
@@ -80,4 +80,4 @@ On a cold start with no user knowledge yet, you may have nothing to write first 
 - [ ] Mental model written in the user's words.
 - [ ] Every high-impact, low-confidence assumption has a validation plan or a written risk.
 - [ ] Open questions and unknowns are on the page, not hidden.
-- [ ] Standing spine written to `USER-BRIEF.md`; per-feature journey/assumptions handed to `/to-prd`.
+- [ ] Standing spine written to `USER-BRIEF.md`; per-feature journey/assumptions handed to `/to-spec`.

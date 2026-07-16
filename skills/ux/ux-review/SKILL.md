@@ -47,4 +47,4 @@ Severity:
 - **Minor** — noticeable rough edge; works.
 - **Polish** — cosmetic.
 
-_Done when:_ every screen state has been walked against all eleven heuristics, findings ranked by severity (blockers first), each located and paired with a fix, and the single highest-leverage fix called out at the end. Each blocker or major is a candidate issue for `/to-issues` or a task for the review-and-refactor skills.
+_Done when:_ every screen state has been walked against all eleven heuristics, findings ranked by severity (blockers first), each located and paired with a fix, and the single highest-leverage fix called out at the end. Each blocker or major is a candidate ticket for `/to-tickets` or a task for the review-and-refactor skills.
