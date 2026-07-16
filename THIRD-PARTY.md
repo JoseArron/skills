@@ -13,6 +13,7 @@ licensed:
 - `skills/requirements-and-planning/grill-with-docs/` ← `engineering/grill-with-docs/`
 - `skills/requirements-and-planning/grilling/` ← `productivity/grilling/`
 - `skills/requirements-and-planning/prototype/` ← `engineering/prototype/`
+- `skills/requirements-and-planning/research/` ← `engineering/research/` — adapted to save notes under the configured agent root.
 - `skills/requirements-and-planning/to-spec/` ← `engineering/to-spec/`
 - `skills/requirements-and-planning/to-tickets/` ← `engineering/to-tickets/`
 - `skills/requirements-and-planning/triage/` ← `engineering/triage/`
