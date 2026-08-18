@@ -27,12 +27,14 @@ Look at the current repo to understand its starting state. Read whatever exists;
 - `docs/agents/` at the repo root — does it exist from a prior or partial run, even without an `## Agent skills` section yet?
 - `CONTEXT.md`, `CONTEXT-MAP.md`, `USER-BRIEF.md`, `docs/adr/` — check both the repo root and any agent root found above; either may hold pre-existing docs from before this skill was used.
 - `.scratch/` — sign that an older local-markdown convention is already in use; offer to move future files under the agent root
+- Is the `triage` skill installed? (a `triage` skill folder alongside this one, or `triage` in your available skills.) This decides whether Section B runs at all.
+- Monorepo signals — a `pnpm-workspace.yaml`, a `workspaces` field in `package.json`, or a populated `packages/*` with its own `src/`. Present only in a genuinely large multi-package repo; their absence means single-context, which is almost every repo.
 
 ### 2. Present findings and ask
 
-Summarise what's present and what's missing. Then walk the user through the decisions **one at a time** — present a section, get the user's answer, then move to the next. Don't dump them all at once.
+Summarise what's present and what's missing. Then take the sections in order — one section, one answer, then the next.
 
-Assume the user does not know what these terms mean. Each section starts with a short explainer (what it is, why these skills need it, what changes if they pick differently). Then show the choices and the default.
+Lead each section with the recommended answer so the user can accept it in a word. Give a one-line explainer only when the choice genuinely branches; skip the section entirely when exploration already settled it (Section B when `triage` isn't installed, Section C when there's no monorepo).
 
 **Section 0 — Agent root.**
 
@@ -54,34 +56,21 @@ Default posture: these skills were designed for GitHub. If a `git remote` points
 - **Local markdown** — issues live as files under `{agentRoot}/work/<feature>/` in this repo (good for solo projects or repos without a remote)
 - **Other** (Jira, Linear, etc.) — ask the user to describe the workflow in one paragraph; the skill will record it as freeform prose
 
-If — and only if — the user picked **GitHub** or **GitLab**, ask one follow-up:
+Record the choice in `{agentRoot}/issue-tracker.md`. The GitHub and GitLab templates carry a "PRs as a request surface" flag, defaulted **off** — leave it off and don't raise it; a user who wants external PRs in the triage queue can flip the flag in the file later.
 
-> Explainer: Open-source repos often receive feature requests as pull requests, not just issues — a PR is an issue with attached code. If you turn this on, `/triage` pulls _external_ PRs into the same queue and runs them through the same labels and states as issues (collaborators' in-flight PRs are left alone). Leave it off if PRs aren't a request surface for you.
+**Section B — Triage label vocabulary.** Skip this section entirely if the `triage` skill isn't installed (exploration told you) — an uninstalled skill needs no labels.
 
-- **PRs as a request surface** — yes / no (default: no). Record the answer in `{agentRoot}/issue-tracker.md`. For local-markdown and other trackers, skip this question — there are no PRs.
+If it is installed, ask exactly one question:
 
-**Section B — Triage label vocabulary.**
+> Do you want to keep the default triage labels? (recommended: **yes**)
 
-> Explainer: When the `triage` skill processes an incoming issue, it moves it through a state machine — needs evaluation, waiting on reporter, ready for an AFK agent to pick up, ready for a human, or won't fix. To do that, it needs to apply labels (or the equivalent in your issue tracker) that match strings _you've actually configured_. If your repo already uses different label names (e.g. `bug:triage` instead of `needs-triage`), map them here so the skill applies the right ones instead of creating duplicates.
-
-The five canonical roles:
-
-- `needs-triage` — maintainer needs to evaluate
-- `needs-info` — waiting on reporter
-- `ready-for-agent` — fully specified, AFK-ready (an agent can pick it up with no human context)
-- `ready-for-human` — needs human implementation
-- `wontfix` — will not be actioned
-
-Default: each role's string equals its name. Ask the user if they want to override any. If their issue tracker has no existing labels, the defaults are fine.
+The defaults are the five canonical roles, each label string equal to its name: `needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, `wontfix`. On **yes**, write them as-is. Only if the user says no — usually because their tracker already uses other names (e.g. `bug:triage` for `needs-triage`) — collect the overrides so `triage` applies existing labels instead of creating duplicates.
 
 **Section C — Domain & user docs.**
 
-> Explainer: Some skills (`improve-codebase-architecture`, `diagnosing-bugs`, `tdd`) read a `CONTEXT.md` file to learn the project's domain language, and `docs/adr/` for past architectural decisions. A companion doc, `USER-BRIEF.md`, holds the project's personas, jobs-to-be-done, and user mental models — written by `understand-the-user`, read by `to-spec`, `ux-flows`, and `ux-review`. Both are project-wide living docs; they need to know whether the repo has one global context or multiple (e.g. a monorepo with separate frontend/backend contexts) so they look in the right place.
+Default to **single-context** — one `CONTEXT.md` + `USER-BRIEF.md` + `docs/adr/` under `{agentRoot}`. This fits almost every repo; write it without asking.
 
-Confirm the layout — it governs `CONTEXT.md` and `USER-BRIEF.md` together:
-
-- **Single-context** — one `CONTEXT.md` + `USER-BRIEF.md` + `docs/adr/` under `{agentRoot}`. Most repos are this.
-- **Multi-context** — `CONTEXT-MAP.md` under `{agentRoot}` pointing to per-context `CONTEXT.md` files (typically a monorepo). `USER-BRIEF.md` stays under `{agentRoot}` unless contexts genuinely serve different users.
+Offer **multi-context** — a `{agentRoot}/CONTEXT-MAP.md` pointing to per-context `CONTEXT.md` files — only when exploration found monorepo signals. Then confirm which layout they want. `USER-BRIEF.md` stays under `{agentRoot}` unless contexts genuinely serve different users.
 
 Both docs are created **lazily** by the skills that own them — `setup-skills` only records *where* they live. `{agentRoot}` is recorded in two places: `{agentRoot}/domain.md` (the detail), and the `## Agent skills` block's **Agent root** line in `CLAUDE.md`/`AGENTS.md` — the one fact every skill already has in context every session, so none of them need to look anything up to find `{agentRoot}` first.
 
@@ -90,7 +79,7 @@ Both docs are created **lazily** by the skills that own them — `setup-skills` 
 Show the user a draft of:
 
 - The `## Agent skills` block to add to whichever of `CLAUDE.md` / `AGENTS.md` is being edited (see step 4 for selection rules)
-- The contents of `{agentRoot}/issue-tracker.md`, `{agentRoot}/triage-labels.md`, `{agentRoot}/domain.md`
+- The contents of `{agentRoot}/issue-tracker.md`, `{agentRoot}/domain.md`, and `{agentRoot}/triage-labels.md` (the last only when `triage` is installed)
 
 Let them edit before writing.
 
@@ -126,12 +115,14 @@ Agent root: `{agentRoot}`
 [layout — "single-context" or "multi-context"]. See `{agentRoot}/domain.md`.
 ```
 
+Include the `### Triage labels` sub-block, and write `{agentRoot}/triage-labels.md`, only when `triage` is installed and Section B ran. When it isn't, both are omitted.
+
 Then write the docs files under `{agentRoot}` using the seed templates in this skill folder as a starting point:
 
 - [issue-tracker-github.md](./issue-tracker-github.md) — GitHub issue tracker
 - [issue-tracker-gitlab.md](./issue-tracker-gitlab.md) — GitLab issue tracker
 - [issue-tracker-local.md](./issue-tracker-local.md) — local-markdown issue tracker
-- [triage-labels.md](./triage-labels.md) — label mapping
+- [triage-labels.md](./triage-labels.md) — label mapping (only if `triage` is installed)
 - [domain.md](./domain.md) — domain doc consumer rules + layout
 
 For "other" issue trackers, write `{agentRoot}/issue-tracker.md` from scratch using the user's description.
