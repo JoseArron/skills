@@ -14,12 +14,14 @@ licensed:
 - `skills/requirements-and-planning/grilling/` ← `skills/productivity/grilling/`
 - `skills/requirements-and-planning/prototype/` ← `skills/engineering/prototype/`
 - `skills/requirements-and-planning/research/` ← `skills/engineering/research/` — adapted to save notes under the configured agent root.
+- `skills/requirements-and-planning/to-questionnaire/` ← `skills/productivity/to-questionnaire/` — adapted to save questionnaires under the configured agent root.
 - `skills/requirements-and-planning/to-spec/` ← `skills/engineering/to-spec/`
 - `skills/requirements-and-planning/to-tickets/` ← `skills/engineering/to-tickets/`
 - `skills/requirements-and-planning/triage/` ← `skills/engineering/triage/`
 - `skills/requirements-and-planning/wayfinder/` ← `skills/engineering/wayfinder/` — adapted to default to local markdown maps under the configured agent root.
 - `skills/agent-workflow/handoff/` ← `skills/productivity/handoff/`
 - `skills/productivity/teach/` ← `skills/productivity/teach/`
+- `skills/productivity/wait-what/` ← `skills/productivity/wait-what/` — adapted to resolve `CONTEXT.md` through the configured agent root.
 - `skills/working-with-skills/writing-for-agents/` ← `skills/productivity/writing-for-agents/` — follows the upstream rename from `writing-great-skills`.
 - `skills/build-and-debug/codebase-design/` ← `skills/engineering/codebase-design/`
 - `skills/build-and-debug/diagnosing-bugs/` ← `skills/engineering/diagnosing-bugs/`
@@ -27,6 +29,7 @@ licensed:
 - `skills/review-and-refactor/code-review/` ← `skills/engineering/code-review/`
 - `skills/review-and-refactor/improve-codebase-architecture/` ← `skills/engineering/improve-codebase-architecture/`
 - `skills/build-and-debug/tdd/` ← `skills/engineering/tdd/`
+- `skills/build-and-debug/wizard/` ← `skills/engineering/wizard/` — adapted to save one-run wizards under the configured agent root and document Git Bash/WSL use on Windows.
 - `skills/git-workflow/git-guardrails-claude-code/` ← `skills/misc/git-guardrails-claude-code/`
 - `skills/git-workflow/resolving-merge-conflicts/` ← `skills/engineering/resolving-merge-conflicts/`
 - `skills/project-setup/setup-pre-commit/` ← `skills/misc/setup-pre-commit/`
