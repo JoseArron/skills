@@ -1,0 +1,4 @@
+interface:
+  display_name: "Resync Upstream Skills"
+  short_description: "Reconcile local skills with upstream sources"
+  default_prompt: "Use $resync-upstream-skills to reconcile this skills repo with its recorded upstream sources."
