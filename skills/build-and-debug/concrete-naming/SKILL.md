@@ -100,6 +100,10 @@ formula" flag, put the comment back. If what's missing is a story about the
 code's past, leave it out — the diff and the commit message already told
 that story, permanently, without rotting.
 
+Once you have decided a comment earns its place, `plain-english` covers how to word it: present
+tense, active voice, and the timeless rule that makes a history comment a style violation and not
+just a maintenance one.
+
 ## Why this is worth the extra few seconds
 
 A qualifier-first name and a subject-first name cost the same number of

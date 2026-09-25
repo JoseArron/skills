@@ -1,11 +1,13 @@
 ---
 name: deslop-written
-description: "Rules and worked examples for writing prose that does not read like AI-generated slop. Consult before writing or editing any prose."
+description: "Rules and worked examples for stripping AI tells out of prose: em dashes, intensifiers, hollow claims, filler phrases, weasel words, dramatic headings, template-shaped sections, fabricated attributions. Run it as the last pass over any prose before handing it back, whether a report, a doc, a ticket body, a comment, or a message. Pairs with plain-english, which is the positive style to write toward."
 ---
 
 # No AI Slop
 
-The full rule list lives in the project `CLAUDE.md` (rules 1 through 24). This skill turns the rules that have worked examples into actionable guidance: each shows a WRONG version (the slop) and a RIGHT version (the fix). The pattern behind every fix is the same: replace the vague claim with a specific, checkable fact.
+The full rule list lives in [`AI-WRITING.md`](AI-WRITING.md) (rules 1 through 24), alongside the banned word, phrase, and punctuation lists. This skill turns the rules that have worked examples into actionable guidance: each shows a WRONG version (the slop) and a RIGHT version (the fix). The pattern behind every fix is the same: replace the vague claim with a specific, checkable fact.
+
+This is the negative half of the job. It says what to strip. `plain-english` says what to write instead: second person, active voice, present tense, timeless wording, key point first. Write with that one, then run this pass over the result.
 
 ## Rule 1: No emdashes
 
