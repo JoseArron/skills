@@ -10,7 +10,7 @@ licensed:
 
 - `skills/requirements-and-planning/domain-modeling/` ← `skills/engineering/domain-modeling/`
 - `skills/requirements-and-planning/grill-me/` ← `skills/productivity/grill-me/`
-- `skills/requirements-and-planning/grill-with-docs/` ← `skills/engineering/grill-with-docs/`
+- `skills/requirements-and-planning/grill-with-docs/` ← `skills/engineering/grill-with-docs/` — adapted to allow model invocation.
 - `skills/requirements-and-planning/grilling/` ← `skills/productivity/grilling/`
 - `skills/requirements-and-planning/prototype/` ← `skills/engineering/prototype/`
 - `skills/requirements-and-planning/research/` ← `skills/engineering/research/` — adapted to save notes under the configured agent root.
@@ -18,8 +18,8 @@ licensed:
 - `skills/requirements-and-planning/to-spec/` ← `skills/engineering/to-spec/`
 - `skills/requirements-and-planning/to-tickets/` ← `skills/engineering/to-tickets/`
 - `skills/requirements-and-planning/triage/` ← `skills/engineering/triage/`
-- `skills/requirements-and-planning/wayfinder/` ← `skills/engineering/wayfinder/` — adapted to default to local markdown maps under the configured agent root.
-- `skills/agent-workflow/handoff/` ← `skills/productivity/handoff/`
+- `skills/requirements-and-planning/wayfinder/` ← `skills/engineering/wayfinder/` — adapted to default to local markdown maps under the configured agent root, and to allow model invocation.
+- `skills/agent-workflow/handoff/` ← `skills/productivity/handoff/` — adapted to allow model invocation.
 - `skills/productivity/teach/` ← `skills/productivity/teach/`
 - `skills/productivity/wait-what/` ← `skills/productivity/wait-what/` — adapted to resolve `CONTEXT.md` through the configured agent root.
 - `skills/working-with-skills/writing-for-agents/` ← `skills/productivity/writing-for-agents/` — follows the upstream rename from `writing-great-skills`.
