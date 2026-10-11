@@ -15,5 +15,16 @@ to pull the latest.
 Skills live at `skills/<category>/<name>/SKILL.md`. The categories:
 `requirements-and-planning`, `build-and-debug`, `review-and-refactor`,
 `security`, `ux`, `working-with-skills`, `agent-workflow`, `productivity`,
-`git-workflow`, and `project-setup` are for organization only. They flatten to one
+`git-workflow`, `project-setup`, and `creative` are for organization only. They flatten to one
 directory per skill name on install.
+
+## Choose a workflow
+
+Use `choose-skill` to find a relevant starting point. Use `implement` for a ticket
+or small change, `implement-spec` for a complete spec with dependent tickets, and
+`retro` to review a session's tools, checks, navigation, and instructions.
+
+The [creative suite](docs/creative-workflows.md) covers references, art contracts,
+generator prompts, code-built visuals, motion, sound, reusable assets, naming,
+and music-led trailers. It reads the project's selected direction and uses only
+the skills needed for the requested deliverable.

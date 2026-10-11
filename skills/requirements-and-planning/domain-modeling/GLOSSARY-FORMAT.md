@@ -1,4 +1,4 @@
-# CONTEXT.md Format
+# GLOSSARY.md Format
 
 ## Structure
 
@@ -31,18 +31,18 @@ _Avoid_: Client, buyer, account
 
 ## Single vs multi-context repos
 
-**Single context (most repos):** One `CONTEXT.md` at the configured agent root.
+**Single context (most repos):** One `GLOSSARY.md` at the configured agent root.
 
-**Multiple contexts:** A `CONTEXT-MAP.md` at the configured agent root lists the contexts, where they live, and how they relate to each other:
+**Multiple contexts:** A `GLOSSARY-MAP.md` at the configured agent root lists the contexts, where they live, and how they relate to each other:
 
 ```md
-# Context Map
+# Glossary Map
 
 ## Contexts
 
-- [Ordering](./src/ordering/CONTEXT.md) — receives and tracks customer orders
-- [Billing](./src/billing/CONTEXT.md) — generates invoices and processes payments
-- [Fulfillment](./src/fulfillment/CONTEXT.md) — manages warehouse picking and shipping
+- [Ordering](./ordering/GLOSSARY.md): receives and tracks customer orders
+- [Billing](./billing/GLOSSARY.md): generates invoices and processes payments
+- [Fulfillment](./fulfillment/GLOSSARY.md): manages warehouse picking and shipping
 
 ## Relationships
 
@@ -53,8 +53,8 @@ _Avoid_: Client, buyer, account
 
 The skill infers which structure applies:
 
-- If `CONTEXT-MAP.md` exists at the agent root, read it to find contexts
-- If only `CONTEXT.md` exists at the agent root, single context
-- If neither exists, create `CONTEXT.md` at the agent root lazily when the first term is resolved
+- If `GLOSSARY-MAP.md` exists at the agent root, read it to find contexts
+- If only `GLOSSARY.md` exists at the agent root, single context
+- If neither exists, create `GLOSSARY.md` at the agent root lazily when the first term is resolved
 
 When multiple contexts exist, infer which one the current topic relates to. If unclear, ask.

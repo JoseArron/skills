@@ -1,22 +1,24 @@
 # Skill mechanics
 
-The skill-specific branch of [`writing-for-agents`](SKILL.md): what changes when the document is a skill — frontmatter, the invocation choice, and router skills. Everything else about writing it is the universal reference in `SKILL.md`.
+The skill-specific branch of [`writing-for-agents`](SKILL.md): what changes when the document is a skill (frontmatter, the invocation choice, and router skills). Everything else about writing it is the universal reference in `SKILL.md`.
 
 ## Invocation
 
 Two choices, trading the two loads:
 
-- A **model-invoked** skill keeps a `description`, so the agent can fire it autonomously — and other skills can reach it. You can still type its name: model-invocation always _includes_ user reach; a description only ever adds agent discovery, never removes the human's. The description is the skill's top-level context pointer, forced to stay loaded at all times — permanent context load in exchange for discoverability. A model-invoked skill whose content is all reference is also one home for shared reference: another skill can invoke it, so reference needed by several skills lives in one place. Mechanics: omit `disable-model-invocation`, and write a model-facing description carrying the trigger branches (the pointer-writing rules in `SKILL.md` apply in full).
-- A **user-invoked** skill strips the description from the agent's reach: only the human typing its name can invoke it, and no other skill can. Zero context load, but it spends cognitive load — you are the index that must remember it exists. Mechanics: set `disable-model-invocation: true`; the `description` becomes human-facing — a one-line summary, trigger lists stripped.
+- A **model-invoked** skill is available for automatic selection and explicit user invocation. Its description is a context pointer: write the trigger branches using the pointer rules in `SKILL.md`. A reference skill can supply shared vocabulary to other skills. Mechanics: omit `disable-model-invocation`; for Codex UI metadata, omit `policy.allow_implicit_invocation` or set it to `true`.
+- A **user-invoked** skill starts when the user invokes it. Its description remains required for discovery and installation; describe its outcome in one line. Mechanics: set `disable-model-invocation: true` and, when providing Codex UI metadata, set `policy.allow_implicit_invocation: false`. Whether the description consumes context depends on the harness, so do not assume an empty context cost.
 
-Pick model-invocation only when the agent must reach the skill on its own, or another skill must. If it only ever fires by hand, make it user-invoked and pay no context load.
+Preserve an established invocation policy. For an original skill, keep automatic discovery unless the user requests explicit-only invocation. Required approval before an external mutation is separate from skill discovery. For a selectively derived skill, preserve the source's explicit-only choice unless the local contract or user changes it.
 
-Shared reference that two user-invoked skills both need can live in neither — with no descriptions, neither can fire the other. Push it to a plain file outside the skill system: external reference any skill can point at.
+When two workflows need the same reference, put it in a model-invoked reference skill or a plain supporting file and link to its authoritative source. Keep starting an explicit-only workflow separate from reading its instructions as evidence.
+
+Load a referenced skill through the Skill tool when the harness provides it; otherwise read its `SKILL.md` through the available file or resource tool. Naming the skill does not load its body.
 
 ## Splitting by invocation
 
-The invocation cut of splitting (the sequence cut lives in `SKILL.md`): split off a model-invoked skill when you have a distinct leading word that should trigger it on its own — a trigger word you actually use in your prompts — or another skill must reach it. You pay context load for the new always-loaded description, so that independent reach has to be worth it.
+The invocation cut of splitting (the sequence cut lives in `SKILL.md`): split off a model-invoked skill when you have a distinct leading word that should trigger it on its own (a trigger word you actually use in your prompts), or another skill must reach it. You pay context load for the new always-loaded description, so that independent reach has to be worth it.
 
 ## Router skills
 
-When user-invoked skills multiply past what you can remember, that piled-up cognitive load is cured by a **router skill**: one user-invoked skill that names the others and when to reach for each, so the human has one skill to remember instead of many. It can only hint, never fire them: user-invoked skills have no description, so nothing but the human can reach them.
+When explicit-only skills become hard to remember, use a **router skill**: one entry point that recommends the relevant skills and their sequence. Recommend explicit-only workflows for the user to invoke. A router can load a model-invoked skill to perform work already authorized by the user's task; routing alone does not authorize starting unrelated workflows.

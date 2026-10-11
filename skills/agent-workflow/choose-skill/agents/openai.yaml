@@ -1,0 +1,5 @@
+interface:
+  display_name: "Choose Skill"
+  short_description: "Choose a skill or flow for your task"
+policy:
+  allow_implicit_invocation: false

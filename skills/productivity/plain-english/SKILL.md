@@ -90,7 +90,7 @@ Three fixes, in order of preference:
 3. **Define it once, in parentheses, on first use.** *The standby is warm (already running, taking
    no traffic).*
 
-Use the project's own words first. Whatever `CONTEXT.md` under the configured agent root calls a
+Use the project's own words first. Whatever `GLOSSARY.md` under the configured agent root calls a
 thing is what you call it. Do not invent a synonym for it.
 
 ## 7. No anthropomorphism

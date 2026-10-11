@@ -1,0 +1,3 @@
+interface:
+  display_name: "Asset library"
+  short_description: "Make reusable asset sets with previews and exports"

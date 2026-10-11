@@ -1,6 +1,6 @@
 ---
 name: research
-description: Investigate a question against high-trust primary sources and capture the findings as a cited Markdown file under the configured agent root. Use when the user wants a topic researched, docs or API facts gathered, or reading legwork delegated to a background agent.
+description: "Investigate a question against high-trust primary sources and capture the findings as a cited Markdown file under the configured agent root. Use when the user wants a topic researched, docs or API facts gathered, or reading legwork delegated to a background agent."
 ---
 
 # Research
@@ -31,8 +31,8 @@ Use this structure:
 
 ## Findings
 
-- <Claim> — <source link or repo path>
-- <Claim> — <source link or repo path>
+- <Claim>; <source link or repo path>
+- <Claim>; <source link or repo path>
 
 ## Sources Checked
 
