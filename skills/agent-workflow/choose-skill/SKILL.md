@@ -35,19 +35,19 @@ Load only the skill whose deliverable the user needs. These related skills share
 
 | Outcome | Skill |
 | --- | --- |
-| Reference research and a sourced moodboard | `visual-research` |
-| A visual identity or art direction contract | `art-direction` |
-| Copyable prompts and reference instructions for image generation | `image-prompts` |
-| Executable procedural 2D or 3D graphics | `procedural-art` |
-| Motion rules, timing, or animation implementation | `motion-design` |
-| Sound cue design or an audio-generation brief | `sound-design` |
-| Consistent reusable assets with a browsable catalog | `asset-library` |
-| Naming, sound-based wordplay, or cultural reference candidates | `creative-naming` |
-| Music and reference research translated into a trailer plan | `trailer-direction` |
+| Reference research and a sourced moodboard | `research-visuals` |
+| A visual identity or art direction contract | `define-art-direction` |
+| Copyable prompts and reference instructions for image generation | `write-image-prompts` |
+| Executable procedural 2D or 3D graphics | `create-procedural-art` |
+| Motion rules, timing, or animation implementation | `design-motion` |
+| Sound cue design or an audio-generation brief | `design-sound` |
+| Consistent reusable assets with a browsable catalog | `build-asset-library` |
+| Naming, sound-based wordplay, or cultural reference candidates | `brainstorm-names` |
+| Music and reference research translated into a trailer plan | `plan-trailer` |
 
-Use the installed `imagegen` skill and image-generation tool for producing or editing bitmap assets; `image-prompts` prepares prompts. Use `procedural-art` when editable code is the deliverable. Native artifact skills handle slide decks, documents, PDFs, and spreadsheets; discover their available provider rather than inventing a local substitute.
+Use the installed `imagegen` skill and image-generation tool for producing or editing bitmap assets; `write-image-prompts` prepares prompts. Use `create-procedural-art` when editable code is the deliverable. Native artifact skills handle slide decks, documents, PDFs, and spreadsheets; discover their available provider rather than inventing a local substitute.
 
-Use `sound-design` for sound cues and their generation or production brief; use `trailer-direction` for song research, trailer structure, and music-led editing.
+Use `design-sound` for sound cues and their generation or production brief; use `plan-trailer` for song research, trailer structure, and music-led editing.
 
 ## Design, review, and closeout
 

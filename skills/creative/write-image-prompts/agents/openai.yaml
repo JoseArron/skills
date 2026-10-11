@@ -1,0 +1,3 @@
+interface:
+  display_name: "Write image prompts"
+  short_description: "Write consistent image prompts and edit briefs"
