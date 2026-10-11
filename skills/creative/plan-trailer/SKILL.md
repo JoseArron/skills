@@ -17,7 +17,7 @@ Choose references for the subject and intended audience. Prefer official trailer
 
 For thematic searches, record motif, language, artist, evidence, and whether it appears in a verse, repeating hook, chorus, bridge, or another identifiable section. Separate lyrical references from title matches and inferred themes. Quote within applicable limits, normally no more than ten lyric words from a song source; paraphrase the rest and link it.
 
-For trailer references, explain techniques to borrow: opening image, musical entry, reveal, escalation, pauses, cuts, lyric/visual relationships, readable gameplay, typography, ending. A link list does not explain fit.
+For trailer references, explain techniques to borrow: opening image, reveal, escalation, pauses, cuts, readable subject matter, typography, ending, and sound or music relationships when relevant. A link list does not explain fit.
 
 Do not invent BPM, bars, section labels, or timestamps from URLs or snippets. Measure or verify them, or label the structure provisional. Online availability does not establish permission for release; record supplied or verified usage status without presenting research as clearance.
 

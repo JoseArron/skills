@@ -1,6 +1,6 @@
 ---
 name: define-art-direction
-description: "Define or revise an art direction contract for a game, brand, character, scene, or graphic system. Use when translating a desired feel or selected references into concrete visual rules, or correcting style drift across outputs."
+description: "Define or revise art direction for visual creative work across media. Use when translating a desired feel or selected references into concrete visual rules, or correcting style drift across outputs."
 ---
 
 # Define art direction
@@ -19,7 +19,7 @@ Use concrete visual language. Replace "cute," "premium," or "cozy" alone with th
 
 ## Write the contract
 
-Use [CONTRACT.md](CONTRACT.md) for the fields relevant to the deliverable. Omit irrelevant fields; a logo needs different rules from a rendered game world.
+Use [CONTRACT.md](CONTRACT.md) for the fields relevant to the deliverable. A photographic series, publication, identity system, installation, or interactive scene needs different rules; select fields from the actual brief.
 
 - Define **constants** that carry identity and **variables** that may change between assets. Character identity, line treatment, and palette roles should not be reinvented for every export.
 - Attribute references by trait. Composition does not automatically determine anatomy, subject matter, interface styling, or rendering technique.
@@ -30,7 +30,7 @@ Use [CONTRACT.md](CONTRACT.md) for the fields relevant to the deliverable. Omit 
 
 ## Prove the direction
 
-Choose a representative sample that exposes the hard constraints: a small character, environment crop, mixed UI/world scene, or slide composition. Match the requested medium and fidelity. A schematic wireframe does not prove a painterly direction; a generated still does not prove code-built art or game feel.
+Choose a representative sample that exposes the hard constraints, such as a page spread, photograph, poster, rendered scene, or animation excerpt. Match the requested medium and fidelity. A schematic wireframe does not prove a painterly direction; a generated still does not prove code-built art or interactive behavior.
 
 Compare the sample with the contract at intended size. State deviations and revise the relevant rule or sample. Do not silently promote the sample to the source of truth. Mark selection only when the user has selected it; proceed with reversible candidate work within scope.
 

@@ -27,9 +27,9 @@ Choose naming approaches that fit the brief: descriptive, evocative, metaphorica
 
 Explore mechanisms, then reject weak recognition, awkward pronunciation, repeated jokes, forced compounds, and the wrong product implications. Match batch size and fields to the request. Candidate counts, category quotas, and numerical scores are optional brief choices.
 
-For finalists, show name, source/construction, sound or meaning change, fit, and tradeoff. Test ordinary speech appropriate to the product: inviting a friend, naming a character, or sharing a creation. These are design checks, not evidence of audience preference.
+For finalists, show name, source/construction, sound or meaning change, fit, and tradeoff. Test ordinary speech appropriate to the use, such as introducing a work, announcing an event, or recommending a product. These are design checks, not evidence of audience preference.
 
-For another round, avoid earlier names and spelling variants. Keep a compact prior-candidate record in established naming notes when useful. Strong names can suggest a family: app, mascot, features, items, or character roles.
+For another round, avoid earlier names and spelling variants. Keep a compact prior-candidate record in established naming notes when useful. When the brief needs related names, develop a family around its actual works, offerings, sections, or subjects.
 
 ## Separate judgment from availability
 

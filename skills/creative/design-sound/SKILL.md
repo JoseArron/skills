@@ -1,15 +1,15 @@
 ---
 name: design-sound
-description: "Design sound effects, audio cues, sonic identity, and audio-generation briefs. Use when defining material, weight, response, cue families, procedural audio, or mix roles; song selection and trailer music structure belong to trailer-direction."
+description: "Design sound effects, soundscapes, audio cues, sonic identity, and audio-generation briefs across media. Use when defining sonic character, cue families, procedural audio, or mix roles; trailer song selection and structure belong to plan-trailer."
 ---
 
 # Design sound
 
-Make each cue communicate an event, material, or state while fitting the project's identity. Distinct events need distinguishable sounds; louder is not automatically clearer.
+Make sound serve the brief's purpose and identity, whether atmospheric, expressive, narrative, or functional. When cues communicate distinct events, keep their meanings distinguishable; louder is not automatically clearer.
 
 ## Read the cue's job
 
-Read the current audio brief, event map, art direction, existing cues, and target platform. Identify the event, listener perspective, expected response, and neighboring sounds that could be confused with it. Preserve selected cues and unrelated behavior.
+Read the audio brief, creative direction, existing sounds, target medium, and cue or scene map when relevant. Identify purpose, listener perspective, expected response, and relationships among sounds. Preserve selected sounds and unrelated behavior.
 
 Choose the sonic vocabulary from the brief's purpose, subject, audience, and context. Realistic, stylized, musical, abstract, and voice-based cues are options; specify material and personality when they matter.
 

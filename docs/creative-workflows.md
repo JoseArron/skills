@@ -2,7 +2,11 @@
 
 Use these skills to carry a chosen direction across references, prompts, code,
 motion, sound, and reusable output. They follow project decisions rather than
-prescribe a house art style. The [local research](agents/research/creative-workflows.md)
+prescribe a house art style. The suite serves creative work across media:
+branding, editorial design, illustration, photography, publications, film,
+campaigns, installations, digital experiences, games, and other creative briefs.
+Each skill handles its named task; choose the ones the deliverable needs.
+The [local research](agents/research/creative-workflows.md)
 records the evidence from Gagambattle, procedural-pets, fake-news, and the supplied
 naming prompts.
 
@@ -20,8 +24,8 @@ another project.
 | [design-motion](../skills/creative/design-motion/SKILL.md) | Define movement and response | Timing rules, motion prompts, or runnable animation |
 | [design-sound](../skills/creative/design-sound/SKILL.md) | Define sonic character and event cues | Cue sheet, audio prompts, or actual audio when requested and available |
 | [build-asset-library](../skills/creative/build-asset-library/SKILL.md) | Make a coherent family reusable | Sources, exports, manifest, and searchable preview gallery |
-| [brainstorm-names](../skills/creative/brainstorm-names/SKILL.md) | Analyze wordplay or generate names | Source/sound mappings, naming prompts, candidate rounds, or researched shortlist |
-| [plan-trailer](../skills/creative/plan-trailer/SKILL.md) | Let music and footage shape a trailer | Song/reference research, timed treatment, storyboard, or edit plan |
+| [brainstorm-names](../skills/creative/brainstorm-names/SKILL.md) | Develop and evaluate names | Naming briefs, construction analysis, prompts, candidates, or researched shortlist |
+| [plan-trailer](../skills/creative/plan-trailer/SKILL.md) | Shape material into a trailer | Reference or music research, treatment, storyboard, or edit plan |
 
 For exploration, start with references and a candidate direction. For production,
 read the selected contract and go straight to the required medium. Naming can
@@ -45,13 +49,13 @@ Record checks actually performed, including anything still uninspected.
 
 - "Use $research-visuals to compare directions for this project. Explain the
   traits to borrow, their sources, and their production implications."
-- "Use $define-art-direction to turn this selected reference into a contract covering
-  world art, UI, typography, motion, and the proof we need."
+- "Use $define-art-direction to define the art direction for this publication:
+  imagery, typography, page composition, and a representative spread."
 - "Use $write-image-prompts to prepare transparent cutout prompts from our contract.
   Return prompts only, with shared identity and per-asset changes."
 - "Use $create-procedural-art and $design-motion for an interactive code study
   of the requested visual behavior. Preserve the chosen direction."
-- "Use $build-asset-library to deliver a consistent pitch kit with editable sources,
+- "Use $build-asset-library to deliver a consistent campaign kit with editable sources,
   transparent exports, a manifest, and searchable local HTML."
 - "Use $brainstorm-names to develop names for this concept and audience. Compare
   approaches that fit the brief and keep prior names excluded."
@@ -65,7 +69,7 @@ Record checks actually performed, including anything still uninspected.
 owns throwaway design questions; `create-procedural-art` owns the code-made artwork.
 `ux-flows` and `make-it-obvious` own screen behavior and clarity; `define-art-direction`
 owns visual identity. `concrete-naming` owns code identifiers; `brainstorm-names`
-owns product and character names. The available image-generation skill owns
+owns names for concepts, works, projects, brands, and their parts. The available image-generation skill owns
 raster tool execution; `write-image-prompts` owns the production brief.
 
 `choose-skill` routes to these jobs without requiring a full pipeline. `retro`

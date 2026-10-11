@@ -1,6 +1,6 @@
 ---
 name: design-motion
-description: "Design or implement animation and motion rules for characters, procedural objects, interfaces, or graphic sequences. Use when defining movement feel, timing, easing, deformation, transitions, or animation prompt briefs."
+description: "Design or implement motion for creative work across media, including animation, graphic sequences, interfaces, and interactive pieces. Use when defining timing, movement feel, transitions, or animation briefs."
 ---
 
 # Design motion
@@ -9,7 +9,7 @@ Make movement express the brief's purpose and intended feeling. Weight, personal
 
 ## Read the movement's job
 
-Read selected direction, motion notes, object or character model, and interaction. Identify the trigger, message, state change, and feeling. Preserve selected movement and unrelated behavior.
+Read selected direction, motion notes, the subject or composition, and interaction when relevant. Identify the movement's purpose, message, timing context, and feeling. Preserve selected movement and unrelated behavior.
 
 Use `ux-flows` for the user's journey or feedback placement; this skill owns how chosen feedback moves. Use `plan-trailer` for shot order, musical structure, and overall pacing. Load the needed entrypoint through the available skill mechanism or read it directly.
 
@@ -18,7 +18,7 @@ Use `ux-flows` for the user's journey or feedback placement; this skill owns how
 Describe key poses and timing, path, acceleration, easing, anticipation, overlap, settling, and holds. Include contact, pivots, deformable regions, and anchors. Specify durations or curves as design parameters unless measured from a source.
 
 - Match deformation to the material. Squash, stretch, wobble, smear, and rigidity are options, not defaults.
-- Preserve identity landmarks in extreme poses. A face sliding across the body can break identity even when motion is smooth.
+- For recognizable subjects, preserve defining features across extreme poses. For abstract sequences, preserve the intended geometry and compositional relationships.
 - Distinguish authored animation from simulation. For interactive motion, test the requested input, interruption, and final state. For a physical simulation, test relevant contact, deformation, release, and rest behavior.
 - For graphic motion, define hierarchy: what moves first, what the eye follows, and what stays readable. Avoid identical bounce on every layer.
 - For a loop, inspect the seam. For a transition, define entry, exit, interruption, and final state.

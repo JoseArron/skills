@@ -19,7 +19,7 @@ Use the established vector or code system where it serves the asset. For raster 
 
 Start with a representative sample when the look is unresolved or expensive to repeat. With a selected direction, continue production within scope. Carry the same contour, palette roles, light, proportions, framing, and visual weight across the set.
 
-For slide cutouts, test placement on the intended background and near text. For game graphics, check in-game scale. A pretty contact sheet alone does not establish usability.
+Test assets in their intended destination: page or slide layout, screen, video frame, print size, or scene. Check scale and background compatibility where relevant. A contact sheet alone does not establish usability.
 
 ## Catalog the actual files
 
